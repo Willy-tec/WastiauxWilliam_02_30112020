@@ -1,0 +1,180 @@
+*{
+    margin:0px;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.blue{
+    color:#0065FC;
+}
+
+.Grey{
+    color: #f2f2f2;
+}
+.darkGrey{
+    color:#d9d9d9;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+h2{
+    font-size: small;
+}
+
+
+body{
+display: flex;
+flex-direction: column;
+width: 100%;
+margin: 20px;
+background-color: white;
+}
+
+#container_corp
+{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    background-color: wheat;
+    width: 100%;
+}
+.logoHeader{
+    width: auto;
+    height: 45px;
+
+    }
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin : 10px;
+    width: 90vw;
+    border-radius: 10px;
+    text-align: center;
+}
+.menuBar>*{
+    margin-left: 66px;
+    
+}
+.menuBar>a, .menuBar>a:hover, .menuBar>a:visited{
+    color: #0065FC ;
+    text-decoration: none;
+}
+.menuBar>a:active{
+    color: bisque;
+}
+/*  section recherche */
+#recherche{
+    margin: 10px;
+    padding: 10px;
+}
+.localisationLogo{
+    width: 52px;
+    padding: 10px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    background-color: #f2f2f2;
+
+}
+.rechercheInput{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    width: 20vw;
+}
+.rechercheButton{
+    background-color: #0065FC;
+    color: white;
+    border:none;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.filtreContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.filtreContainer>*{
+    margin-right: 24px;
+    
+}
+section{
+    margin: 20px;
+}
+
+
+
+.logoFiltre{
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    border: 2px solid  #DEEBFF;
+    display: flex;
+    width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    margin: -4px;
+    z-index: 10;
+}
+.filtre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    
+    height: 46px;
+    border: 2px solid #d9d9d9;
+    border-radius: 23px;
+    z-index:1;
+}
+.texteFiltre{
+    margin: 10px;
+}
+
+/*  section hebergement */
+
+#hebergement{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 880px;
+    padding:25px;
+}
+
+.hebergementList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.hebergementCadre{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px #e3e3e3;
+}
+
+.hebergementImg{
+    border-radius: 20px 20px 0px 0px;
+    margin: 10px;
+    width: 236px;
+    height: 114px;
+    object-fit: cover;
+}
+.hebergementLink, .hebergementLink:visited, .hebergementLink:focus, .hebergementLink:link{
+    outline:none;
+    text-decoration: none;
+    color: black;
+}
