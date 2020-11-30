@@ -46,7 +46,7 @@ background-color: white;
     height: 45px;
 
     }
-header{
+.header{
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -143,11 +143,18 @@ section{
 
 /*  section hebergement */
 
+.containerHebergementPopulaire{
+    display: flex;
+    flex-direction: row;
+}
+
 #hebergement{
     background-color: #f2f2f2;
     border-radius: 20px;
     width: 880px;
+    height: 625px;
     padding:25px;
+    
 }
 
 .hebergementList{
@@ -177,4 +184,61 @@ section{
     outline:none;
     text-decoration: none;
     color: black;
+}
+
+/*  section hebergement Populaire*/
+
+#populaireSection{
+    background-color: #f2f2f2;
+    width: 420px;
+    height: 625px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.populaireHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.PopulaireCadre{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;;
+}
+.PopulaireTexte{
+    display: flex;
+    flex-direction: column;
+}
+
+.PopulaireImg{
+
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+    height : 134px;
+    width : 127px;
+    
+}
+
+/* section activité */
+
+.activiteContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.activiteContainerCol{
+    display: flex;
+    flex-direction: column;
+}
+
+.activiteImg{
+    width: 302px;
+    height: 388px;
+    object-fit: cover;
 }
