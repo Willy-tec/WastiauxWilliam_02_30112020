@@ -173,7 +173,7 @@ section{
     height: 114px;
     object-fit: cover;
 }
-.hebergementLink, .hebergementLink:visited, .hebergementLink:focus, .hebergementLink:link{
+.Link, .Link:visited, .Link:focus, .Link:link{
     outline:none;
     text-decoration: none;
     color: black;
