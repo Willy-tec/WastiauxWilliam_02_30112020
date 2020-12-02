@@ -1,0 +1,34 @@
+
+.container.HouseAndPopular{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.housing{                                               /* Cadre général*/
+
+    width: 880px;
+    height: 625px;
+    padding:25px;
+}
+
+.housing .list{                                          /* Liste des hébergements */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.housing .card{                                            /* Format de type carte*/
+    flex-direction: column;
+}
+
+.housing .image{                                            /* mise en forme des miniatures */
+    border-radius: 20px 20px 0px 0px;
+    margin: 10px;
+    width: 236px;
+    height: 114px;
+    object-fit: cover;
+}
+

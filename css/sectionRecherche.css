@@ -1,0 +1,81 @@
+.research{
+    margin: 10px;
+    padding: 10px;
+}
+
+.research header{
+    padding: 10px;
+}
+
+
+.research .input{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    width: 20vw;
+}
+
+.research .input .logo{
+    width: 52px;
+    padding: 10px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    background-color: #f2f2f2;
+
+}
+.research .button{
+    background-color: #0065FC;
+    color: white;
+    border:none;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.container.filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container.filter>*{
+    margin-right: 24px;
+    
+}
+
+.filter .logo{
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    border: 2px solid  #DEEBFF;
+    display: flex;
+    width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    padding:0px;
+    margin:-4px; 
+
+}
+.filter .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    
+    height: 46px;
+    border: 2px solid #d9d9d9;
+    border-radius: 23px;
+    z-index:1;
+}
+.filter .texte{
+    margin: 10px;
+}
+
+.container.result{
+    display: flex;
+    flex-direction: row;
+}
+.result .logo{
+    margin-right: 10px;
+}

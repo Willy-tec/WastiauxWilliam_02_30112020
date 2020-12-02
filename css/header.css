@@ -1,0 +1,41 @@
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin : 10px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logoHeader{
+    width: auto;
+    height: 45px;
+
+    }
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin : 10px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.menuBar>*{
+    margin-left: 66px;
+    
+}
+.menuBar>a, .menuBar>a:hover, .menuBar>a:visited{
+    color: #0065FC ;
+    text-decoration: none;
+}
+.menuBar>a:active{
+    color: bisque;
+}

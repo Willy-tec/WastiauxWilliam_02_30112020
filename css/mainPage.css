@@ -1,0 +1,66 @@
+/* On regroupe sur cette page tout les réglages commun a la page entiere, comme les couleurs utilisé et autres*/
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+
+.blue{
+    color:#0065FC;
+}
+
+.Grey{
+    color: #f2f2f2;
+}
+.darkGrey{
+    color:#d9d9d9;
+}
+
+.backgroundGrey{
+    background-color: #f2f2f2;
+}
+.bold{
+    font-weight: bold;
+}
+
+.roundBorder{
+    border-radius: 20px;
+}
+
+
+h2{
+    font-size: small;
+}
+
+html{
+ 
+    width: 100%;
+    padding:0;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 1140px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    box-shadow: 0px 10px 10px #e3e3e3;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+}
+
+.Link, .Link:visited, .Link:focus, .Link:link{
+    outline:none;
+    text-decoration: none;
+    color: black;
+}
