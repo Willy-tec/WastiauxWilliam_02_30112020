@@ -1,19 +1,20 @@
 footer{
     
     background-color: #d9d9d9;
-    width : 1440px;
+    width : 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     
 }
-.container_footer{
+footer .container{
     display: flex;
     flex-direction: row;
     width : 1440px;
     justify-content: space-between;
     padding: 50px;
     margin-bottom: 0px;
+
 }
 footer article{
     width: 33%;

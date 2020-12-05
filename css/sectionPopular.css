@@ -1,5 +1,5 @@
 
-#populaireSection{
+.popular{
     background-color: #f2f2f2;
     width: 420px;
     height: 625px;
@@ -8,12 +8,12 @@
     flex-direction: column;
     padding: 10px;
 }
-.populaireHeader{
+.popular header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.PopulaireCadre{
+.popular .card{
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -21,12 +21,12 @@
     padding: 10px;
     margin: 10px;;
 }
-.PopulaireTexte{
+.popular .texte{
     display: flex;
     flex-direction: column;
 }
 
-.PopulaireImg{
+.popular .image{
 
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;

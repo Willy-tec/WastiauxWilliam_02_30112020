@@ -1,17 +1,17 @@
 
-.activiteContainer{
+.activity .container{
     display: flex;
     flex-direction: row;
     height : 446px;
 }
 
-article.activiteCadre{
+.activity .card{
     border-radius: 20px;
     box-shadow: 0px 10px 10px #f2f2f2;
     height: fit-content;
     
 }
-.activiteContainerCol{
+.activity .container .col{
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -19,13 +19,10 @@ article.activiteCadre{
 h4.activiteTexte{
     height: 46px;
 }
-.activiteImg{
+.activity .image{
     width: 302px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     height: available;
 }
 
-.activiteCadre.spe1{
-    height: 100px;
-}

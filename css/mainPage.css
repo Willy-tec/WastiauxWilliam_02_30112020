@@ -46,10 +46,11 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    width: 1140px;
+    width: 1440px;
     background-color: white;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .card{

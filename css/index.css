@@ -1,15 +1,37 @@
-#container_corp
-{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+
+
+}
+
+body{
+    width: 56vw;
+    margin: auto;
+}
+
+img{
+    width: 50px;
+}
+
+body > header{
+    background-color: aqua;
     display: flex;
     flex-direction: row;
-    align-self: flex-start;
-    background-color: wheat;
-    width: 100%;
-    
+    justify-content: space-between;
+    margin: 0px 20px 0px 20px;
 }
-/*  section recherche */
-
-section{
+main{
+    background-color: red;
+    display: grid;
     margin: 20px;
 }
 
+footer{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+}
