@@ -16,7 +16,7 @@
     height: 45px;
 
     }
-.header{
+body > header{
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -24,15 +24,22 @@
     align-items: center;
     padding: 20px;
     margin : 10px;
-    width: 100%;
+    width: 1440px;
     border-radius: 10px;
     text-align: center;
 }
-.menuBar>*{
+.menuBar{
+    width: 30vw;
+}
+
+.menuBar> ul{
     margin-left: 66px;
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
     
 }
-.menuBar>a, .menuBar>a:hover, .menuBar>a:visited{
+.menuBar a, .menuBar a:hover, .menuBar a:visited{
     color: #0065FC ;
     text-decoration: none;
 }

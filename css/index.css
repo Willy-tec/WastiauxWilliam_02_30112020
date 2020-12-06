@@ -1,20 +1,29 @@
 *{
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
 
+}
+:root{
+    --header-nav-font-size : 0.7rem;
+    --main-margin: 20px;
+    --main-width: 56vw;
+    --img-width: 50px;
+    --menuBar-width: 35vmin;
+    --menuBar-height: 10vmin;
+}
 html{
 
-
+font-size: 100%;
 }
 
 body{
-    width: 56vw;
+    width: var(--main-width);
     margin: auto;
 }
 
 img{
-    width: 50px;
+    width: var(--img-width);
 }
 
 body > header{
@@ -27,11 +36,36 @@ body > header{
 main{
     background-color: red;
     display: grid;
-    margin: 20px;
+    margin: var(--main-margin);
 }
 
 footer{
     background-color: blueviolet;
     display: flex;
     flex-direction: row;
+}
+.menuBar{
+    width: var(--menuBar-width);
+    height: var(--menuBar-height);
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+.menuBar > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    
+}
+.menuBar > ul > li > a{
+    text-decoration: none;
+    font-size: var(--header-nav-font-size);
+    height: 100%;
+}
+
+.menuBar > ul > li:hover{
+border-top: 1px solid blue;
 }
