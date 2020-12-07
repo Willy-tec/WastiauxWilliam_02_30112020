@@ -1,28 +1,95 @@
-
+/* 
 .activity .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
     flex-direction: row;
     height : 446px;
 }
 
-.activity .card{
-    border-radius: 20px;
-    box-shadow: 0px 10px 10px #f2f2f2;
-    height: fit-content;
-    
-}
+
 .activity .container .col{
-    display: flex;
-    flex-direction: column;
+
     height: 100%;
 }
 h4.activiteTexte{
     height: 46px;
 }
 .activity .image{
-    width: 302px;
+    width: 20%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     height: available;
 }
 
+.activity .port
+{
+    grid-row: 1/ span 4;
+    background-color: black;
+
+}
+.article.card.spe1{
+    grid-column: 1/ span 4;
+} 
+*/
+.activity{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: ;
+}
+.activity .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* column-gap: 77px; */
+    align-content: space-between;
+    justify-content: space-between;
+    height: 445px;
+
+}
+
+.activity .card{
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px #f2f2f2;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 302px;
+}
+.activity .card .image{
+    width: 100%;
+    align-self: stretch;
+    justify-self: stretch;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.activity h4{
+    height: 56px;
+}
+
+.activity .container .card:nth-child(1) .image
+{
+    height: 389px;
+}
+.activity .container .card:nth-child(2) .image
+{
+    height: 180px;
+}
+.activity .container .card:nth-child(3) .image
+{
+    height: 110px;
+}
+.activity .container .card:nth-child(4) .image
+{
+    height: 384px;
+}
+.activity .container .card:nth-child(5) .image
+{
+    height: 140px;
+}
+.activity .container .card:nth-child(6) .image
+{
+    height: 154px;
+}

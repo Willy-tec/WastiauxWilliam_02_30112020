@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: row;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
     margin: 10px;;
 }
 .popular .texte{
@@ -28,8 +28,8 @@
 
 .popular .image{
 
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
     object-fit: cover;
     height : 134px;
     width : 127px;
