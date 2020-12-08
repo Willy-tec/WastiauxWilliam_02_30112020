@@ -55,7 +55,7 @@ body{
 }
 
 .card{
-    box-shadow: 0px 0px 6px 1px #e3e3e3;
+    box-shadow: 0px 0px 9px 3px rgba(217, 217, 217, .7);
     border-radius: 20px;
     background-color: white;
     display: flex;
@@ -67,5 +67,15 @@ body{
     color: black;
 }
 main{
-    width:  100%;
+    width:  1340px;
+}
+img{
+   image-rendering: auto;
+   width: 100%; 
+
+}
+
+a:visited, a:link, a:focus{
+    text-decoration: none;
+    color: black;
 }

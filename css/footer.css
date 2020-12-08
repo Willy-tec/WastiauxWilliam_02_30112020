@@ -5,7 +5,7 @@ footer{
     height: 218px;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 0px;
     line-height: 40px;
 }
 .footer .container{
@@ -19,7 +19,7 @@ footer{
 
 }
 .footer{
-width: 1440px;
+width: 1340px;
 margin: auto;
 display: flex;
 flex-direction: row;

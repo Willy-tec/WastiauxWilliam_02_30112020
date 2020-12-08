@@ -1,11 +1,11 @@
 .research{
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;
     line-height: 36px;;
 }
 
 .research header{
-    padding: 10px;
+    padding: 10px 0 10px 0;
 }
 
 
@@ -14,10 +14,17 @@
     flex-direction: row;
     height: 50px;
     margin: 0px;
-    padding: 10px;
-    width: 20vw;
-}
+    padding: 10px 0 10px 0;
 
+}
+.research .town, .research .town:focus {
+   outline: none;
+    border-top: 2px solid #f2f2f2;
+    border-right: none;
+    border-bottom: 2px solid #f2f2f2;
+    border-left: none ;
+    text-align: center;
+}
 .research .input .logo{
     width: 52px;
     padding: 10px;
@@ -32,6 +39,7 @@
     border:none;
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
+    width: 134px;
 }
 
 .container.filter{
