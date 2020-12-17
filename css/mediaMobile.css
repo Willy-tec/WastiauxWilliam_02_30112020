@@ -1,0 +1,36 @@
+@media screen and (max-width:760px) {
+
+
+
+
+main{
+    width: 100%;
+
+}
+
+
+
+
+.HouseAndPopular{
+    width: 100%;
+    margin: 0;
+}
+
+
+    .housing .list{
+        width: 100%;
+        
+    }
+    .housing .Link{
+        width: 100%;
+    }
+    .housing .card{
+        width: auto;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .housing .image{
+        width: auto;
+    }
+}

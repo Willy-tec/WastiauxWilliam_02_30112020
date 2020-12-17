@@ -59,12 +59,14 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    /*width: 1440px;*/
+    width: 100%;
     background-color: white;
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 0px 50px 0px 50px ;
+    padding: 0;
+   /* padding: 0px 50px 0px 50px ;*/
 }
 
 .card{

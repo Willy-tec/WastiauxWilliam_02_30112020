@@ -1,0 +1,147 @@
+@media screen and (max-width:1440px) {
+    /*CSS code for devices with a maximal width of 720 px */
+
+html{
+width: 100%;
+height: auto;
+    
+}
+
+body{
+
+    width:100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+}
+main{
+    width:90% ;
+    height: auto;
+}
+
+body > header{
+    width: 90vw;
+    padding: 42px 0 0 0px;
+}
+
+
+
+.container.filter{
+flex-wrap: wrap;
+width: 100%;
+}
+
+.filter .list{
+    margin-top: 10px;
+}
+
+
+
+.container.HouseAndPopular{
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 10px auto 10px auto;
+    width: 90vw;
+    height: auto;
+    
+    
+}
+
+
+.housing{                                               /* Cadre général*/
+
+    width: auto;
+    height: auto;
+    margin-bottom: 25px;
+
+}
+
+.housing .list{                                          /* Liste des hébergements */
+
+    height: auto;
+    justify-content: space-around;
+    
+    
+
+}
+.housing .list .card{                                          /* Liste des hébergements */
+
+    margin: 25px;
+    
+
+}
+.popular{
+    background-color: #f2f2f2;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+
+    justify-content: space-between;
+    
+    padding: 46px 35px 35px 35px;
+}
+.popular .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity .container{
+    height: auto;
+    width: 90vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.activity{
+    height: auto;
+}
+.activity .card{
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+.activity .container .card:nth-child(1) .image
+{
+    height: 134px;
+}
+.activity .container .card:nth-child(2) .image
+{
+    height: 134px;
+}
+.activity .container .card:nth-child(3) .image
+{
+    height: 134px;
+}
+.activity .container .card:nth-child(4) .image
+{
+    height: 134px;
+}
+.activity .container .card:nth-child(5) .image
+{
+    height: 134px;
+}
+.activity .container .card:nth-child(6) .image
+{
+    height: 134px;
+}
+.footer{
+    width: 90vw;
+ }
+footer{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+}                                                           /* fin du media query */

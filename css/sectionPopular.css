@@ -20,7 +20,8 @@
     flex-direction: row;
     border-radius: 20px;
     padding: 5px;
-    margin: 10px;;
+    margin: 10px;
+    width: 319px;
 }
 .popular .texte{
     display: flex;
