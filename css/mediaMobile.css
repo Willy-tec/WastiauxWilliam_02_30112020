@@ -8,14 +8,22 @@ main{
 
 }
 
-
+section.research{
+    margin: 20px;
+    width: 100% ;
+}
 
 
 .HouseAndPopular{
-    width: 100%;
+    width: 100% !important;
+    
     margin: 0;
 }
-
+.housing{
+    
+    order: 2;
+    background-color: white;
+}
 
     .housing .list{
         width: 100%;
@@ -25,12 +33,25 @@ main{
         width: 100%;
     }
     .housing .card{
-        width: auto;
-        margin: 0;
+        width: 100%;
         padding: 0;
+        
+        height: auto;
         
     }
     .housing .image{
         width: auto;
+    }
+
+    section.popular{
+        border-radius: 0 !important;
+    }
+    .popular .Link{
+        width: 100% !important;
+    }
+    .popular .card{
+        margin: 12px 0 12px 0;
+        width: 100%;
+        padding: 5px;
     }
 }
