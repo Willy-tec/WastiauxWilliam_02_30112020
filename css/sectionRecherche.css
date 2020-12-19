@@ -78,6 +78,12 @@
     border-radius: 23px;
     z-index:1;
 }
+.filter .list:hover{
+    cursor: pointer;
+    border: 2px solid #DEEBFF;
+    color: #0065FC;
+
+}
 .filter .texte{
     margin: 10px;
 }

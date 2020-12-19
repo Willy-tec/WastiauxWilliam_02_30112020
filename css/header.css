@@ -36,7 +36,7 @@ body > header{
 .menuBar a, .menuBar a:hover, .menuBar a:visited{
     color: black;
     text-decoration: none;
-    padding: 50px 28px 0px 28px; 
+    padding: 54px 28px 0px 28px; 
 }
 .menuBar a:active{
     
@@ -45,5 +45,5 @@ body > header{
 
 .menuBar a:hover{
     color: #0065FC ;
-    border-top: 40px solid blue;
+    border-top: 20px solid  #0065FC;            /* la taille de la bordure top est défini par la différence entre le padding du header et celui du menu*/
 }

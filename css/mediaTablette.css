@@ -55,22 +55,30 @@ width: 100%;
     width: auto;
     height: auto;
     margin-bottom: 25px;
-
+    order: 2;
+    background-color: white;
+    
 }
+
 
 .housing .list{                                          /* Liste des hébergements */
 
     height: auto;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around;  
 
 }
 .housing .list .card{                                          /* Liste des hébergements */
 
     margin: 25px;
-    
+    width: auto;
+}
 
+.housing .list .Link{
+
+    min-width: 50%;
+}
+.housing .list .card .image{
+    width: auto;
 }
 .popular{
     background-color: #f2f2f2;
@@ -83,14 +91,29 @@ width: 100%;
     
     padding: 46px 35px 35px 35px;
 }
+.popular header{
+    padding-bottom: 35px;
+}
 .popular .container{
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
-
+.popular .Link{
+    min-width: 400px;
+    width: 30%;
+    flex: 0.5 2 auto;
+}
+.popular .card{
+    width: 100% !important;
+    margin: 0;
+}
+.popular .texte{
+    width: 100% !important;
+}
 .activity .container{
     height: auto;
     width: 90vw;
@@ -98,23 +121,26 @@ width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+    column-gap: 20px;
 }
 
 .activity{
     height: auto;
+    padding: 5px;
 }
 .activity .card{
     height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    
 
 }
-.activity .container .card:nth-child(1) .image
+.activity .container  .image
 {
-    height: 134px;
+    height: 134px !important;     /*Si l'on veut passer la spécificité, obligé de !important, sinon voir methode alt*/
 }
+/*
 .activity .container .card:nth-child(2) .image
 {
     height: 134px;
@@ -135,6 +161,7 @@ width: 100%;
 {
     height: 134px;
 }
+*/
 .footer{
     width: 90vw;
  }
