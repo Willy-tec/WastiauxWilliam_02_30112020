@@ -1,19 +1,105 @@
-@media screen and (max-width:760px) {
-
-
-
-
+@media screen and (max-width:600px) {
+h1{
+    font-size: 21px;
+    font-weight: bold;
+    word-wrap: normal;
+    line-height: normal;
+}
 main{
     width: 100%;
 
 }
 
-section.research{
-    margin: 20px;
-    width:auto ;
+body > header{
+flex-direction: column;
+    width:100%;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+    height:132px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+nav.menuBar{
+    margin: 0;
+    width: 100%;
+    right: 0;
+    height:51px;
 }
 
 
+.logoHeader{
+    margin-left: 20px;
+    margin-top: 28px;
+    width: auto;
+}
+
+nav.menuBar ul{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 51px;
+    margin:0 !important;
+    column-gap: 0;
+
+    
+}
+
+nav.menuBar li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+}
+nav.menuBar a{
+    
+    height: 31px !important;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+    padding-top: 20px;
+}
+nav.menuBar a:hover{
+    border-bottom: 3px solid blue;
+    border-top: 0 !important;
+    padding: 23px 0 0 0; 
+}
+.sinscrire{
+    position: absolute;
+    top: -58px;
+    right: -37px;
+    border-bottom: 0;
+}
+.sinscrire{
+    border-bottom: 0 !important;
+}
+.menuBar a, .menuBar a:hover, .menuBar a:visited{
+padding: 0;
+margin: 0;
+}
+
+
+
+section.research{
+padding: 20px;
+}
+.fa-search{
+    display: contents;
+}
+.texteRecherche{
+    display: none;
+}
+.research .button{
+    padding: 20px;
+    width: auto;
+}
 .HouseAndPopular{
     width: 100% !important;
     
@@ -40,15 +126,22 @@ section.research{
     }
 
     section.popular{
+        display: none;
         border-radius: 0 !important;
     }
     .popular .Link{
-        width: 100% !important;
+        width: 10% !important;
     }
     .popular .card{
         margin: 12px 0 12px 0;
-        min-width: 0 !important;
-        width: 100% !important;
+        min-width: 10px !important;
+        width: 10% !important;
         padding: 5px;
+    }
+    .popular .container{
+        width: auto;
+    }
+    .footer{
+        flex-direction: column;
     }
 }

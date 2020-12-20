@@ -29,15 +29,17 @@
 
     <body>
     
-        <header>
-             
-            <img src="ressource/images/logo/Reservia.svg" class = "logoHeader" alt="logo reservia"/>
+        <header >
+             <div class="logoHeader">
+                 <img src="ressource/images/logo/Reservia.svg" alt="logo reservia"/>
+             </div>
+            
               
             <nav class = "menuBar">
                 <ul>
                     <li><a href="#housing">Hébergements</a></li>
                     <li><a href="#activity">Activités</a></li>
-                    <li><a href="#inscription"><strong class="blue">S'inscrire</strong></a></li>
+                    <li class="sinscrire"><a href="#inscription"><strong class="blue">S'inscrire</strong></a></li>
                 </ul>
             </nav>
         </header>
@@ -52,8 +54,8 @@
                 
                 <form action="#" method="GET" class="input">
                     <img src="ressource/images/logo/localisation.svg"   class = "logo" alt="icone de localisation"/>
-                    <input type="text" value="Marseille, France" class="town"/>
-                    <input type="submit" value="Rechercher"  class="button"/>
+                    <input type="text" placeholder="Marseille, France" class="town"/>
+                    <button type="submit" class="button"><p class="texteRecherche">Rechercher</p><i class="fas fa-search"></i></button>
                 </form>
                 <div class="container filter">
                     <h3>Filtres</h3>
