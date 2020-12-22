@@ -1,4 +1,4 @@
-@media screen and (max-width:600px) {
+@media screen and (max-width:760px) {
 h1{
     font-size: 21px;
     font-weight: bold;
@@ -71,14 +71,27 @@ nav.menuBar a:hover{
     border-top: 0 !important;
     padding: 23px 0 0 0; 
 }
-.sinscrire{
+body header .menuBar .sinscrire{
+ 
     position: absolute;
-    top: -58px;
-    right: -37px;
-    border-bottom: 0;
+    top: -50px;
+    right: 37px;
+    border-bottom: none;
+    padding:0;
+    margin:0;
 }
-.sinscrire{
-    border-bottom: 0 !important;
+body header .menuBar .sinscrire a{
+    width: auto;
+    padding:0;
+    margin:0;
+}
+body header .menuBar li.sinscrire {
+    width: auto;
+    padding:0;
+    margin:0;
+}
+body header .menuBar .sinscrire :hover{
+    border-bottom: 0;
 }
 .menuBar a, .menuBar a:hover, .menuBar a:visited{
 padding: 0;
@@ -100,48 +113,136 @@ padding: 20px;
     padding: 20px;
     width: auto;
 }
+.research .result{
+    line-height: normal;
+}
+main .research .container.filter{
+
+    flex-direction: row;
+}
+
+main .research .container.filter h3{
+width: 90vw !important;
+}
+
+main .research .input .town{
+    width: 100%;
+}
+
+
+
 .HouseAndPopular{
     width: 100% !important;
     
     margin: 0;
 }
 
+.HouseAndPopular section{
+    width: 100%;
+    padding:0;
+}
+.HouseAndPopular section header{
 
-    .housing .list{
-        width: 100%;
-        
-    }
-    .housing .Link{
-        width: 100%;
-    }
-    .housing .card{
-        width: 100%;
-        padding: 0;
-        
-        height: auto;
-        
-    }
-    .housing .image{
-        width: auto;
-    }
 
-    section.popular{
-        display: none;
-        border-radius: 0 !important;
-    }
-    .popular .Link{
-        width: 10% !important;
-    }
-    .popular .card{
-        margin: 12px 0 12px 0;
-        min-width: 10px !important;
-        width: 10% !important;
-        padding: 5px;
-    }
-    .popular .container{
-        width: auto;
-    }
-    .footer{
-        flex-direction: column;
-    }
+    padding:30px 20px 0 20px;
+}
+.HouseAndPopular section .afficherPlus{
+
+    padding:20px 0 0 20px;
+}
+    
+
+.housing h2{
+    padding: 20px;
+}
+.housing .list{
+    width: 100%;
+        
+}
+.housing .Link{
+    width: 100%;
+}
+.housing .card{
+    width: 100%;
+    padding: 0;
+    
+    height: auto;
+    
+}
+.housing .image{
+    width: auto;
+}
+.housing .list .card{
+    margin:12px 20px 12px 20px ;
+}
+
+
+
+
+section.popular{
+    border-radius: 0 !important;
+    margin-bottom: 40px;
+}
+.popular .Link{
+    width: 100% !important;
+    min-width: 10px ;
+}
+.popular .card{
+    
+    margin: 12px 0 12px 0;
+    width: auto;
+    padding: 5px;
+}
+.popular .container{
+    width: auto;
+    margin: 20px;
+    gap: 0;
+}
+
+.popular header{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+section.activity{
+    width: 100%;
+    padding:0;
+    margin: 0;
+    align-items: center;
+}
+
+section.activity h2{
+    align-self: flex-start;
+    padding:20px;
+}
+
+section.activity div.container{
+    width: 90%;
+    padding:0;
+    margin: 0;
+}
+section.activity article.card{
+    width: 100%;
+    padding:0;
+    margin: 12px 0 12px 0;
+}
+footer{
+    width: 100%;
+    margin-top: 37px;
+}
+.footer{
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    line-height: 30px;
+}
+.footer article{
+    width: inherit;
+}
+
+.footer h5{
+    margin: 10px 0 10px 0;
+}
+
 }

@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .popular .card{
     background-color: white;
@@ -23,6 +24,7 @@
     margin: 10px;
     width: 319px;
 }
+
 .popular .texte{
     display: flex;
     flex-direction: column;

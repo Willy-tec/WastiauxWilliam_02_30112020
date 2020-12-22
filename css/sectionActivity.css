@@ -67,9 +67,9 @@
 .card:hover{
     box-shadow: 0 0 0px 0px #d9d9d9;
 /*  transform: scale(1.015); */
- transition: all ease .3s;
+ transition: box-shadow ease .3s;
 }
 .card{
  /*    transform: scale(1); */
-    transition: all ease .3s;
+    transition: box-shadow ease .3s;
    }

@@ -108,8 +108,9 @@ width: 100%;
     flex: 0.5 2 auto;
 }
 .popular .card{
-    width: 100% !important;
+    width: 100% ;
     margin: 0;
+
 }
 .popular .texte{
     width: 100% !important;
