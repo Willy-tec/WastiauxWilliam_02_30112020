@@ -38,7 +38,8 @@
     border-top-left-radius: 15px;
     object-fit: cover;
     height : 134px;
-    width : 127px;
+    min-width : 127px;
+    max-width : 127px;
     
 }
 .popular .container{
