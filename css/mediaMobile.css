@@ -151,7 +151,9 @@ main .research .input .town{
     padding:20px 0 0 20px;
 }
     
-
+.housing{
+    background-color: white;
+}
 .housing h2{
     padding: 20px;
 }
