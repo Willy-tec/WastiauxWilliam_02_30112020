@@ -1,0 +1,937 @@
+/* ############################################################################################ */
+/* ###################################### Section général ##################################### */
+/* ############################################################################################ */
+
+/* Un reset qui n'est pas très propre, mais qui casse tout s'il est enlevé */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* réglage pour la page en général. Par exemple, Blue permet d'attribuer la couleur bleu au étoiles, en leur donnant ce nom de classes, ou bien, les tailles générique pour les titres
+On a fait le choix d'enlever les décoration générique pour les liens.
+*/
+
+.blue{
+    color:#0065FC;
+}
+
+.Grey{
+    color: #f2f2f2;
+}
+.darkGrey{
+    color:#d9d9d9;
+}
+
+.backgroundGrey{
+    background-color: #f2f2f2;
+}
+.bold{
+    font-weight: bold;
+}
+
+.roundBorder{
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 22px;
+}
+
+html{
+
+    width: 100%;
+    padding:0;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+}
+
+.card{
+    box-shadow: 0px 0px 9px 3px rgba(217, 217, 217, .7);
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+}
+
+.Link, .Link:visited, .Link:focus, .Link:link{
+    outline:none;
+    text-decoration: none;
+    color: black;
+}
+main{
+    width:  1340px;
+}
+img{
+   image-rendering: auto;
+   width: 100%;
+
+}
+
+a:visited, a:link, a:focus{
+    text-decoration: none;
+    color: black;
+}
+
+/* ############################################################################################ */
+/* ###################################### Section header ###################################### */
+/* ############################################################################################ */
+
+.logoHeader{
+    width: auto;
+    height: 45px;
+
+    }
+body > header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 0 0 0;
+    margin : 0px;
+    width : 1340px;
+    border-radius: 10px;
+    text-align: center;
+}
+.menuBar{
+    width: 435px;
+    position: relative;
+    top:0px;
+    right: 50px;
+}
+
+.menuBar> ul{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    column-gap: 11px;
+    width: 100%;
+}
+.menuBar a, .menuBar a:hover, .menuBar a:visited{
+    color: black;
+    text-decoration: none;
+    padding: 54px 28px 0px 28px;
+}
+.menuBar a:active{
+
+    border-top: 2px solid black;
+}
+
+.menuBar a:hover{
+    color: #0065FC ;
+    border-top: 20px solid  #0065FC;            /* la taille de la bordure top est défini par la différence entre le padding du header et celui du menu*/
+}
+
+/* ############################################################################################ */
+/* ###################################### Section recherche ################################### */
+/* ############################################################################################ */
+
+.research{
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;
+    line-height: 36px;
+}
+
+.research header{
+    padding: 10px 0 10px 0;
+}
+
+.fa-search{
+    display: none;          /* Ce logo n'est visible que dans la partie mobile : C'est la loupe qui remplace le texte rechercher */
+}
+
+.research .input{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin: 0px;
+    padding: 10px 0 10px 0;
+}
+
+.research .town, .research .town:focus {
+    outline: none;
+    border-top: 2px solid #f2f2f2;
+    border-right: none;
+    border-bottom: 2px solid #f2f2f2;
+    border-left: none ;
+    text-align: center;
+}
+
+.research .input .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    padding: 12px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    background-color: #f2f2f2;
+}
+
+.research ::placeholder{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.research .button{
+    background-color: #0065FC;
+    color: white;
+    border:none;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    width: 134px;
+}
+
+.container.filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.container.filter>*{
+    margin-right: 24px;
+}
+
+.filter .logo{
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    border: 2px solid  #DEEBFF;
+    display: flex;
+    width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    padding:0px;
+    margin:-4px;
+}
+
+.filter .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    height: 46px;
+    border: 2px solid #d9d9d9;
+    border-radius: 23px;
+    z-index:1;
+}
+
+.filter .list:hover{
+    cursor: pointer;
+    border: 2px solid #DEEBFF;
+    color: #0065FC;
+
+}
+
+.filter .texte{
+    margin: 10px;
+}
+
+.container.result{
+    display: flex;
+    flex-direction: row;
+}
+
+.result .logo{
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9;
+    color: #0065FC;
+    width: 24px;
+    height: 24px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter .fas {
+    color:#0065FC;
+}
+
+/* ############################################################################################ */
+/* ###################################### Section housing ##################################### */
+/* ############################################################################################ */
+
+.container.HouseAndPopular{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+
+.housing{                                               /* Cadre général*/
+    width: 800px;
+    height: 533px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding:46px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.housing .list{                                          /* Liste des hébergements */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 429px;
+}
+
+.housing .card{                                            /* Format de type carte*/
+    flex-direction: column;
+    height: 200px;
+    width: 246px;
+}
+
+.housing .image{                                            /* mise en forme des miniatures */
+    border-radius: 15px 15px 0px 0px;
+    margin: 5px;
+    width: 236px;
+    height: 114px;
+    object-fit: cover;
+}
+
+.housing .description{
+    margin: 10px;
+    height: 100%;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* ############################################################################################ */
+/* ############################## Section Hebergement populaire ############################### */
+/* ############################################################################################ */
+
+.popular{
+    background-color: #f2f2f2;
+    width: 339px;
+    height: 545px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 46px 35px 35px 35px;
+}
+
+.popular header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .card{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+    width: 319px;
+}
+
+.popular .texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px 20px 14px 20px;
+}
+
+.popular .image{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    object-fit: cover;
+    height : 134px;
+    min-width : 127px;
+    max-width : 127px;
+}
+
+.popular .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 498px;
+}
+
+/* ############################################################################################ */
+/* ###################################### Section activité #################################### */
+/* ############################################################################################ */
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 50px 0 50px 0;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.activity .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* column-gap: 77px; */
+    align-content: space-between;
+    justify-content: space-between;
+    height: 445px;
+}
+
+.activity .card{
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 302px;
+}
+
+.activity .card .image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.activity h4{
+    height: 56px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+.activity .container .card:nth-child(1) .image
+{
+    height: 389px;
+}
+
+.activity .container .card:nth-child(2) .image
+{
+    height: 180px;
+}
+
+.activity .container .card:nth-child(3) .image
+{
+    height: 110px;
+}
+
+.activity .container .card:nth-child(4) .image
+{
+    height: 384px;
+}
+
+.activity .container .card:nth-child(5) .image
+{
+    height: 140px;
+}
+
+.activity .container .card:nth-child(6) .image
+{
+    height: 154px;
+}
+
+.card:hover{
+    box-shadow: 0 0 0px 0px #d9d9d9;
+    transition: box-shadow ease .3s;
+}
+
+.card{
+    transition: box-shadow ease .3s;
+}
+
+/* ############################################################################################ */
+/* ###################################### Section footer ###################################### */
+/* ############################################################################################ */
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 218px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    line-height: 40px;
+}
+
+.footer article{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.footer{
+    width: 1340px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ############################################################################################ */
+/* ############################# Section media query Tablette ################################# */
+/* ############################################################################################ */
+
+@media screen and (max-width:1440px) {
+
+html{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    width:100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    width:90% ;
+    height: auto;
+}
+
+body > header{
+    width: 90vw;
+    padding: 42px 0 0 0px;
+}
+
+.container.filter{
+flex-wrap: wrap;
+width: 100%;
+}
+
+.filter .list{
+    margin-top: 10px;
+}
+
+.container.HouseAndPopular{
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px auto 10px auto;
+    width: 90vw;
+    height: auto;
+}
+
+.housing{                                               /* Cadre général*/
+    width: auto;
+    height: auto;
+    margin-bottom: 25px;
+    order: 2;
+}
+
+.housing .list{                                          /* Liste des hébergements */
+    height: auto;
+    justify-content: space-around;
+}
+
+.housing .list .card{                                          /* Liste des hébergements */
+    margin: 25px;
+    width: auto;
+}
+
+.housing .list .Link{
+    min-width: 50%;
+}
+
+.housing .list .card .image{
+    width: auto;
+}
+
+.popular{
+    background-color: #f2f2f2;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 46px 35px 35px 35px;
+    margin-bottom: 40px;
+}
+
+.popular header{
+    padding-bottom: 35px;
+}
+
+.popular .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.popular .Link{
+    min-width: 286px;
+    width: 30%;
+    flex: 0.5 2 auto;
+}
+
+.popular .card{
+    width: 100% ;
+    margin: 0;
+}
+
+.popular .texte{
+    width: 100% !important;
+    line-height: normal;
+}
+
+.popular .starContainer{
+    width: auto;
+    flex-wrap: nowrap;
+}
+
+.activity .container{
+    height: auto;
+    width: 90vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.activity{
+    height: auto;
+    padding: 5px;
+}
+
+.activity .card{
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.activity .container  .image
+{
+    height: 134px !important;     /*Si l'on veut passer la spécificité, obligé de !important, sinon voir methode alt*/
+}
+/*
+.activity .container .card:nth-child(2) .image
+{
+    height: 134px;
+}
+.activity .container .card:nth-child(3) .image
+{
+    height: 134px;
+}
+.activity .container .card:nth-child(4) .image
+{
+    height: 134px;
+}
+.activity .container .card:nth-child(5) .image
+{
+    height: 134px;
+}
+.activity .container .card:nth-child(6) .image
+{
+    height: 134px;
+}
+*/
+
+.footer{
+    width: 90vw;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+}                                                           /* fin du media query */
+
+/* ############################################################################################ */
+/* ############################## Section media query mobile ################################## */
+/* ############################################################################################ */
+
+@media screen and (max-width:760px)
+{
+
+h1{
+    font-size: 21px;
+    font-weight: bold;
+    word-wrap: normal;
+    line-height: normal;
+}
+
+main{
+    width: 100%;
+
+}
+
+body > header{
+    flex-direction: column;
+    width:100%;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+    height:132px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav.menuBar{
+    margin: 0;
+    width: 100%;
+    right: 0;
+    height:51px;
+}
+
+.logoHeader{
+    margin-left: 20px;
+    margin-top: 28px;
+    width: auto;
+}
+
+nav.menuBar ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 51px;
+    margin:0 !important;
+    column-gap: 0;
+}
+
+nav.menuBar li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+}
+
+nav.menuBar a{
+    height: 31px !important;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+nav.menuBar a:hover{
+    border-bottom: 3px solid blue;
+    border-top: 0 !important;
+    padding: 23px 0 0 0; 
+}
+
+body header .menuBar .sinscrire{
+    position: absolute;
+    top: -50px;
+    right: 37px;
+    border-bottom: none;
+    padding:0;
+    margin:0;
+}
+
+body header .menuBar .sinscrire a{
+    width: auto;
+    padding:0;
+    margin:0;
+}
+
+body header .menuBar li.sinscrire {
+    width: auto;
+    padding:0;
+    margin:0;
+}
+
+body header .menuBar .sinscrire :hover{
+    border-bottom: 0;
+}
+
+.menuBar a, .menuBar a:hover, .menuBar a:visited{
+padding: 0;
+margin: 0;
+}
+
+section.research{
+padding: 20px;
+}
+
+.fa-search{
+    display: contents;
+}
+
+.texteRecherche{
+    display: none;
+}
+
+.research .button{
+    padding: 20px;
+    width: auto;
+}
+
+.research .result{
+    line-height: normal;
+}
+
+main .research .container.filter{
+    flex-direction: row;
+}
+
+main .research .container.filter h3{
+width: 90vw !important;
+}
+
+main .research .input .town{
+    width: 100%;
+}
+
+.HouseAndPopular{
+    width: 100% !important;
+    margin: 0;
+}
+
+.HouseAndPopular section{
+    width: 100%;
+    padding:0;
+}
+
+.HouseAndPopular section header{
+    padding:30px 20px 0 20px;
+}
+
+.HouseAndPopular section .afficherPlus{
+    padding:20px 0 0 20px;
+}
+
+.housing{
+    background-color: white;
+}
+
+.housing h2{
+    padding: 20px;
+}
+
+.housing .list{
+    width: 100%;
+}
+
+.housing .Link{
+    width: 100%;
+}
+
+.housing .card{
+    width: 100%;
+    padding: 0;
+    height: auto;
+}
+
+.housing .image{
+    width: auto;
+}
+
+.housing .list .card{
+    margin:12px 20px 12px 20px ;
+}
+
+section.popular{
+    border-radius: 0 !important;
+    margin-bottom: 40px;
+}
+
+.popular .Link{
+    width: 100% !important;
+    min-width: 10px ;
+}
+
+.popular .card{
+    margin: 12px 0 12px 0;
+    width: auto;
+    padding: 5px;
+}
+
+.popular .container{
+    width: auto;
+    margin: 20px;
+    gap: 0;
+}
+
+.popular header{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+section.activity{
+    width: 100%;
+    padding:0;
+    margin: 0;
+    align-items: center;
+}
+
+section.activity h2{
+    align-self: flex-start;
+    padding:20px;
+}
+
+section.activity div.container{
+    width: 90%;
+    padding:0;
+    margin: 0;
+}
+
+section.activity article.card{
+    width: 100%;
+    padding:0;
+    margin: 12px 0 12px 0;
+}
+
+footer{
+    width: 100%;
+    margin-top: 37px;
+}
+
+.footer{
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    line-height: 30px;
+}
+
+.footer article{
+    width: inherit;
+}
+
+.footer h5{
+    margin: 10px 0 10px 0;
+}
+}
+
+/* ############################################################################################ */
+/* ########################################### Fin ############################################ */
+/* ############################################################################################ */
