@@ -8,7 +8,7 @@
         <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/index.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- phrase magique pour adapter la gestion du zoom sur les mobiles-->
-        <link rel="shortcut icon" href="assets/img/Reservia@3x.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/img/R@3x.png" type="image/x-icon">
         <title>Réservia</title>
         <meta name="description" content="Reservia : site de réservation en ligne pour trouver un hébergement pour la durée de vos vacances" />
     </head>
@@ -25,7 +25,11 @@
                 <ul>
                     <li><a href="#housing">Hébergements</a></li>
                     <li><a href="#activity">Activités</a></li>
-                    <li class="sinscrire"><a href="#inscription"><strong class="blue">S'inscrire</strong></a></li>
+                    <li class="sinscrire">
+                        <a href="#inscription">
+                            <strong class="blue">S'inscrire</strong>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -38,18 +42,36 @@
                 <p>En plein centre ville ou en pleine nature</p>
                 </header>
 
-                <form action="#" method="GET" class="input">
-                    <i class="fas fa-map-marker-alt logo"></i>
-                    <input type="text" placeholder="Marseille, France" class="town"/>
-                    <button type="submit" class="button"><span class="texteRecherche">Rechercher</span><i class="fas fa-search"></i></button>
+                <form action="#" method="GET" class="formulaire">
+                    <div class="input">
+                        <i class="fas fa-map-marker-alt logo"></i>
+                        <input type="text" placeholder="Marseille, France" class="town"/>
+                        <button type="submit" class="button">
+                            <span class="texteRecherche">Rechercher</span>
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <div class="container filter">
+                        <h3>Filtres</h3>
+                        <div class="list">
+                            <i class="fas fa-money-bill-wave logo"></i>
+                            <span class="texte">&Eacute;conomique</span>
+                        </div>
+                        <div class="list">
+                            <i class="fas fa-child logo"></i>
+                            <span class="texte">Familial</span>
+                        </div>
+                        <div class="list">
+                            <i class="fas fa-heart logo"></i>
+                            <span class="texte">Romantique</span>
+                        </div>
+                        <div class="list">
+                            <i class="fas fa-dog logo"></i>
+                            <span class="texte">Animaux autorisés</span>
+                        </div>
+                    </div>
                 </form>
-                <div class="container filter">
-                    <h3>Filtres</h3>
-                    <div class="list"> <div class="logo"><i class="fas fa-money-bill-wave"></i></div> <div class="texte">&Eacute;conomique</div></div>
-                    <div class="list"> <div class="logo"><i class="fas fa-child"></i></div> <div class="texte">Familial</div></div>
-                    <div class="list"> <div class="logo"><i class="fas fa-heart"></i></div> <div class="texte">Romantique</div></div>
-                    <div class="list"> <div class="logo"><i class="fas fa-dog"></i></div> <div class="texte">Animaux autorisés</div></div>
-                </div>
 
                 <div class="container result">
                     <div class="logo"><i class="fas fa-info"></i></div>
