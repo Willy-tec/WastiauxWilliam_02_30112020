@@ -311,6 +311,7 @@ body > header{
     flex-direction: column;
     height: 200px;
     width: 246px;
+    padding-bottom: 10px;;
 }
 
 .housing .image{                                            /* mise en forme des miniatures */
@@ -609,32 +610,8 @@ width: 100%;
     flex-wrap: nowrap;
 }
 
-.activity .container{
-    height: auto;
-    width: 90vw;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    column-gap: 20px;
-}
 
-.activity{
-    height: auto;
-    padding: 5px;
-}
 
-.activity .card{
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-.activity .container  .image
-{
-    height: 134px !important;     /*Si l'on veut passer la spécificité, obligé de !important, sinon voir methode alt*/
-}
 /*
 .activity .container .card:nth-child(2) .image
 {
@@ -669,6 +646,37 @@ footer{
     width: 100%;
 }
 }                                                           /* fin du media query */
+@media screen and ( max-width: 1400px){
+    .activity .container  .image
+    {
+        height: 134px !important;     /*Si l'on veut passer la spécificité, obligé de !important, sinon voir methode alt*/
+    }
+    .activity .container{
+        height: auto;
+        width: 90vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+    
+    .activity{
+        height: auto;
+        padding: 5px;
+    }
+    
+    .activity .card{
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    
+
+}
+
+
 
 /* ############################################################################################ */
 /* ############################## Section media query mobile ################################## */
