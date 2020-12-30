@@ -121,7 +121,7 @@ body > header{
     text-align: center;
 }
 .menuBar{
-    width: 435px;
+    /*! width: 435px; */
     position: relative;
     top:0px;
     right: 50px;
@@ -182,6 +182,7 @@ body > header{
     border-bottom: 2px solid #f2f2f2;
     border-left: none ;
     text-align: center;
+    min-width: 160px;
 }
 
 .research .input .logo{
