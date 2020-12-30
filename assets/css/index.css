@@ -311,6 +311,7 @@ body > header{
     flex-direction: column;
     height: 200px;
     width: 246px;
+    padding-bottom: 10px;;
 }
 
 .housing .image{                                            /* mise en forme des miniatures */
